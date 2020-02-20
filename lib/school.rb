@@ -20,7 +20,7 @@ class School
     end 
   end
   
-  def sort
+  def sort(grade)
     roster.sort_by {|k,v| v[grade]}
   end  
 end
