@@ -21,7 +21,7 @@ class School
   end
   
   def sort
-    roster.sort_by(&:last).to_h
+    roster.sort.map.to_h {|v| v }
   end  
 end
     
