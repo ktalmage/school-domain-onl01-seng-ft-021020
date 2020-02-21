@@ -21,7 +21,7 @@ class School
   end
   
   def sort
-    roster.sort.map {|v| v}
+    roster.sort.map.to_h {|v| v}
   end  
 end
     
