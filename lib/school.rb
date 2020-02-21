@@ -21,7 +21,11 @@ class School
   end
   
   def sort
-    roster.sort.to_h {|v| v}
+    new_hash = {}
+    roster.each do |k,v|
+      new_hash[k] = v.sort
+    end
+    new_hash
   end  
 end
     
