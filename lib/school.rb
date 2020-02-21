@@ -20,7 +20,7 @@ class School
     end 
   end
   
-  def sort
+  def sort(student)
     roster.sort.to_h {|v| v[student] }
   end  
 end
